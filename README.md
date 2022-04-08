@@ -30,6 +30,10 @@ module.exports = {
 - 出于服务端的账号密码隐私保护，建议在`.gitignore`中添加`deploy.config.js`
 
 ```
+创建deploy.config.js
+
+在.gitignore添加deploy.config.js
+
 git rm --cached deploy.config.js
 
 git add .
@@ -40,9 +44,7 @@ git commit -m "Update .gitignore"
 
 ## 后续
 
-0.检测有没有配置文件的存在
-
-1.打包压缩
+1.检测有没有配置文件的存在
 
 2.判断配置文件里配置的信息是否存在，包括文件夹是否存在
 
