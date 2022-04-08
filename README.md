@@ -1,11 +1,11 @@
-# deploy-tool
+# xiao-deploy-tool
 
 基于 ssh 上传文件夹到服务端，可以轻松实现前端的部署，简单的 CD 工具
 
 ## Install
 
 ```
-npm i deploy-tool --save
+npm i xiao-deploy-tool -g
 ```
 
 ## Usage
@@ -26,6 +26,21 @@ module.exports = {
   remote: "/home/CVSInferFrontendGo",
 };
 ```
+
+在`package.json`里加入
+
+```js
+"scripts": {
+    "bd": "build命令(如vite build)&&xiao-deploy-tool",
+    "deploy":"xiao-deploy-tool"
+  },
+```
+
+需要打包并部署时，在终端执行`npm run bd`
+
+仅需要部署时,执行`npm run deploy`
+
+成功后会输出 `deploy success`
 
 - 出于服务端的账号密码隐私保护，建议在`.gitignore`中添加`deploy.config.js`
 

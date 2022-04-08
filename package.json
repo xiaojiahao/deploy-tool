@@ -1,6 +1,6 @@
 {
   "name": "xiao-deploy-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于ssh上传文件夹到服务端，可以轻松实现前端的部署，简单的CD工具",
   "main": "index.js",
   "bin": {
