@@ -1,0 +1,26 @@
+{
+  "name": "deploy-tool",
+  "version": "1.0.0",
+  "description": "基于ssh上传文件夹到服务端，可以轻松实现前端的部署，简单的CD工具",
+  "main": "index.js",
+  "bin": {
+    "deploy": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaojiahao/deploy-tool.git"
+  },
+  "keywords": [],
+  "author": "xiaojiahao",
+  "license": "MIT",
+  "devDependencies": {
+    "node-ssh": "^12.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaojiahao/deploy-tool/issues"
+  },
+  "homepage": "https://github.com/xiaojiahao/deploy-tool#readme"
+}
